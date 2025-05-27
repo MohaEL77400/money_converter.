@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ConvertCash</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="javascript/scripts.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1 class="titre">Convertisseur de monnaie</h1>
+  <img src="image/Logo_Convert_Cash.png"/>
+  <h2 class= "slogan">Convertissez votre monnaie avec des taux d'échange actualisés toutes les heures!!</h2>
+  <div class="container">
+    <div class="bloc bloc1">
+      Monnaie de départ<br>
+      <input type="number" id="montant" placeholder="Entrer le montant" /><br><br>
+      <select id="deviseDepart"></select><br><br>
+     <input type="button" value="Convertir la monnaie" onclick="convertir()" />
+    </div>
+<p id="conversionMessage" style="display:none; color:white; font-weight:bold;">Conversion en cours...</p>
+    <div class="bloc bloc2">
+      Monnaie d’arrivée<br>
+      <input type="text" id="resultat" placeholder="Monnaie d'arrivée" readonly /><br><br>
+      <select id="deviseArrivee"></select><br><br>
+      <input type="button" value="Copier la somme" onclick="copier()" style="width:150px;height:50px" />
+    </div>
+  </div>
+<footer>
+    <small>Copyright © 2023  Ahmad Mahin et Mohamed El ghazouany. Tous droits réservés.</small>
+  </footer>
+<div id="loading" class="loading-message">Conversion en cours...</div>
+  Conversion en cours...</div>
+</body>
+
+
+</html>

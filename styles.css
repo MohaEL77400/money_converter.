@@ -1,0 +1,141 @@
+body{
+	
+	background-image: url("../image/fond_convert_cash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+h1{
+	background-color: #f9bc27;
+	color:white;
+	text-align: center;
+}
+
+img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+	font-family: Verdana;
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+p{
+	background-color: black;
+	padding-left: 40px;	
+}
+.container {
+  display: flex;
+  justify-content: space-between; 
+  padding: 45px;
+  
+}
+
+.bloc {
+  flex: 1; 
+  padding: 170px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.bloc1 {
+  background-color: #f9bc27;
+  border: 25px solid;
+  padding: 160px;
+  border-image: linear-gradient(blue, green) 40;
+}
+
+.bloc2 {
+  background-color: #f9bc27;
+  border: 25px solid;
+  padding: 160px;
+  border-image: linear-gradient(blue, green) 40;
+}
+
+Convertir la monnaie {
+	padding-bottom: 50px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color:#f9bc27 ;
+  color:black;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .bloc {
+    padding: 30px;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .bloc1, .bloc2 {
+    padding: 30px;
+    border-width: 15px;
+  }
+
+  input, select {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  input[type="button"] {
+    height: 40px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+loading{
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #007bff;
+  animation: clignote 1s infinite;
+}
+
+@keyframes clignote {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+input[type="button"] {
+  background: linear-gradient(135deg, #f9bc27, #ff8c00);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 30px; 
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.5);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: 200px; 
+  max-width: 100%; 
+  text-align: center;
+  overflow: visible;
+}
+
+input[type="button"]:hover {
+  background: linear-gradient(135deg, #ffb733, #e67300);
+  box-shadow: 0 6px 15px rgba(230, 115, 0, 0.7);
+  transform: translateY(-3px);
+}
+
+input[type="button"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(230, 115, 0, 0.7);
+}
